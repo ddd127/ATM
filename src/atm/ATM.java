@@ -92,10 +92,10 @@ public class ATM {
             sumIndex -= dp[i][sumIndex] * billValues[i];
         }
 
-        result += "всего: " + reachSum;
+        result += "summary: " + reachSum;
 
         if (reachSum < sumNeed) {
-            result += "\nБез " + (sumNeed - reachSum);
+            result += "\nWithout " + (sumNeed - reachSum);
         }
 
         return result;
