@@ -8,7 +8,9 @@ public class Main {
         Scanner in = new Scanner(System.in);
         ATM atm = new ATM();
         boolean wasQuit = false;
+
         System.out.println("ATM started, write your command:");
+
         while (!wasQuit) {
             String command = in.next();
             try {
